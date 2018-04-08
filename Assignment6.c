@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	float x,n;
+	float x;
+	int n;
 	printf("Enter a number\n");
-	scanf("%f", &n);
-	x = (power(2,n))/(fact(n));
+	scanf("%d", &n);
+	x = (power(2,n)) * 1.0 / (fact(n)) * 1.0;
 	printf("x is %f\n",x);
 }
-int fact(float n)
+int fact(int n)
 {	
 	if(n == 1)
 	{
@@ -18,7 +19,7 @@ int fact(float n)
 		return(n*fact(n-1));	
 	}
 }
-int power(float a, float b)
+int power(int a, int b)
 {
 	if(b == 1)
 	{
