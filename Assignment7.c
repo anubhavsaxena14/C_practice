@@ -5,7 +5,7 @@ int main()
 	float x;
 	printf("Enter a number\n");
 	scanf("%d", &n);
-	x = (power(2,2*n+1))/(fact(2*n));
+	x = (power(2,2*n+1)) * 1.0 / (fact(2*n)) * 1.0;
 	printf("x is %f\n",x);
 }
 int fact(int n)
