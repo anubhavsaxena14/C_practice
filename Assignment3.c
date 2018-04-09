@@ -2,11 +2,11 @@
 int main()
 {
 	int i, count = 1, prev, curr, max = 0;
-	printf("Enter a number");
+	printf("Enter a number\n");
 	scanf("%d", &prev);
 	for(i = 0; i < 10; i++)
 	{
-		printf("Enter a number");
+		printf("Enter a number\n");
 		scanf("%d", &curr);
 		if(curr > prev)
 		{
